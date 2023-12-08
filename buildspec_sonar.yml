@@ -15,7 +15,7 @@ phases:
       - export PATH=$PATH:./sonar-scanner-4.7.0.2747-linux/bin/
   build:
     commands:
-      - sonar-scanner -Dsonar.login=168a281629314c7bb46eafedd42fa72de4ec12b7 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=shantanu1911_shopify -Dsonar.organization=shantanu1911 -DgeneratePom=true
+      - sonar-scanner -Dsonar.login=168a281629314c7bb46eafedd42fa72de4ec12b7 -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=shopify -Dsonar.organization=shantanu1911 -DgeneratePom=true
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=shopify >result.json
       - cat result.json
