@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('englishname', models.CharField(max_length=300)),
+                ('hindiname', models.CharField(max_length=300)),
                 ('photo', models.ImageField(blank=True, null=True, upload_to='images/products/')),
                 ('categoryid', models.PositiveIntegerField(null=True)),
                 ('price', models.PositiveIntegerField(null=True)),

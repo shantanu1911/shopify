@@ -110,6 +110,7 @@ def admin_add_product_view(request):
            product.categoryid=request.POST.get('categoryid')
            category=models.Category.objects.get(id=request.POST.get('categoryid'))
            product.categoryname=category.englishname
+           product.hindiname="random"
            product.save()
         else:
             print('form invalid')
