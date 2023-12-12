@@ -76,7 +76,7 @@
 
         <div class="col-xl col-sm-3">
           <div class="card">
-            <img src="{% static c.photo.url %}" height="200px" width="200px" class="card-img-top"
+            <img src="{% static c.photo.url | default_if_none:'#' %}" height="200px" width="200px" class="card-img-top"
               alt="...">
 
                 <div class="card-body">
